@@ -47,8 +47,8 @@ export const Badge = (props: Props) => {
           'background-color': props.badgeBackgroundColor ?? '#ffffff',
         }}
       >
-        {props.footer?.text ?? 'Proplusé par'}
-        <a ref={liteBadge} href={props.footer?.companyLink ?? 'https://startia.fr' target="_blank" rel="noopener noreferrer" class="lite-badge" id="lite-badge" style={{ 'font-weight': 'bold', color: props.footer?.textColor ?? props.poweredByTextColor ?? defaultTextColor }}>
+        {props.footer?.text ?? 'Proposé par'}
+        <a ref={liteBadge} href={props.footer?.companyLink ?? 'https://startia.fr'} target="_blank" rel="noopener noreferrer" class="lite-badge" id="lite-badge" style={{ 'font-weight': 'bold', color: props.footer?.textColor ?? props.poweredByTextColor ?? defaultTextColor }}>
           <span>&nbsp;{props.footer?.company ?? 'StartIA'}</span>
         </a>
       </span>
